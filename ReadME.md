@@ -11,6 +11,38 @@
 
 同步博客：[卡西莫多的礼物](quosimodo.cn)
 
+
+
+## 配置
+
+| 配置     | 型号                               |
+| -------- | ---------------------------------- |
+| 处理器   | i7-8550U Kaby Lake                 |
+| 核显     | Intel Graphics UHD620              |
+| 独显     | GeForce MX150                      |
+| 内存     | 4G× DDR4 2400MHz/16Gx DDR4 2400MHz |
+| 硬盘     | 512G SSD/1T HDD                    |
+| 声卡     | Realtek ALC294                     |
+| 无线网卡 | AR956X                             |
+
+
+
+## 哪些工作
+
+在Catalina上：
+
+- [x]  触控板
+
+- [x] 声卡
+- [x] 有线网卡
+- [x] 无线网卡（工作缓慢）
+
+- [x] 蓝牙（开关蓝牙前请先关闭WI-FI，不然会卡住）
+- [x] 集成显卡
+- [ ] 独立显卡（无法驱动）
+
+
+
 ## 折腾的过程
 
 ​	Big Sur折腾过程中，触摸板和显示是没有问题的。
@@ -46,3 +78,18 @@
    修复了蓝牙和Wi-Fi驱动
 
 BigSur每次重启驱动和磁盘都可能掉，于是装了Catalina还是黑果小兵的镜像，发现刚才配置的EFI完美运行，好起来了XDM。仓库里放了折腾过程的几个版本，你们可以自己试试Big Sur。要安装还是建议Catalina。
+
+
+
+## 注意事项
+
+1. HDPI开启：
+   * 关机
+   * 开机进入Open Core选择Recovery模式->终端->输入`csrutil disable`：输出Successful ... 则操作成功
+   * 重新开机：下载或者clone`https://github.com/xzhih/one-key-hidpi`，进入文件夹打开`hdpi.command`开启hdpi
+   * 关机
+   * 开机进入Open Core选择Recovery模式->终端->输入`csrutil enable`：输出Successful ... 则操作成功
+
+2. USB定制请参考黑果小兵的教程：[Hackintool(Intel FB Patcher) USB定制视频](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)
+
+3. 蓝牙开关需要先关闭Wi-Fi，不然会卡住。
