@@ -41,7 +41,7 @@
 - [x] 集成显卡
 - [ ] 独立显卡（无法驱动）
 
-
+已知问题：休眠出现不亮屏问题
 
 ## 使用说明
 
@@ -77,7 +77,7 @@
    * 重新开机：下载或者`git clone https://github.com/xzhih/one-key-hidpi`，进入文件夹打开`hdpi.command`，开启hdpi
    * 关机
    * 开机进入Open Core选择Recovery模式->终端->输入`csrutil enable`：输出Successful ... 则操作成功
-   * 重新开机
+     * 重新开机，输入`csrutil status`如果显示disable，需要在开机进OC时候，reset nvram（可能会丢失OC引导，需要重新添加引导），在进Recovery`csrutil enable`，重启，即可开启SIP。
 
 2. USB定制请参考黑果小兵的教程：[Hackintool(Intel FB Patcher) USB定制视频](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)
 
