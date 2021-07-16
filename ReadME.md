@@ -1,5 +1,5 @@
 # Hackintosh-fl8000un-x542un
-​	华硕fl8000un 黑苹果OC驱动
+​	华硕fl8000un 黑苹果OC引导
 
 ​	通过fl8000uq的EFI完善给fl8000un
 
