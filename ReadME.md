@@ -4,7 +4,7 @@
 
 ​    通过fl8000uq的EFI完善给fl8000un
 
-> （感谢🙏：https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh）
+> [fl8000uq的GitHub地址](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh)
 
 ​    使用前建议先看看，原版的README，我只是加了几个驱动。
 
